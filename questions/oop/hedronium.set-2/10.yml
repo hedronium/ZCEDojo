@@ -1,0 +1,38 @@
+---
+question: |
+    WHat will be the output to this code?
+
+    ```PHP
+    class A
+    {
+        public $foo = "FOO";
+    }
+
+    class B
+    {
+        public $foo = "BAR";
+    }
+
+    class C
+    {
+        public function __construct(A $a)
+        {
+            echo $a->foo;
+        }
+    }
+
+    $b = new B;
+    new C($b);
+    ```
+
+options:
+    - It will throw an Error.
+    - |
+        "FOO"
+        
+    - |
+        "BAR"
+
+    - There will be no output.
+
+correct: 0

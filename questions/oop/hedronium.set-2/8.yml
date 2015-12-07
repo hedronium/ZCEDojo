@@ -1,0 +1,32 @@
+---
+question: |
+
+    ```PHP
+    class A
+    {
+        public function foo()
+        {
+            echo "foo";    
+        }
+        
+        public function __call($name, $args)
+        {
+            echo $name;
+        }
+    }
+
+    $a = new A;
+    $a->foo();
+    $a->bar();
+    ```
+
+    What will happen upon running this code?
+
+options:
+    - It will output "foobar"
+    - It will output "foo"
+    - It will output "bar"
+    - It will cause an error and the `bar` method is not defined.
+    - There will be no output.
+
+correct: 0

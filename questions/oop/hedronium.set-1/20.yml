@@ -1,0 +1,46 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        const X = "Tomato";
+        
+        public function foo()
+        {
+            echo static::X;
+            echo ',';
+            echo self::X;
+        }
+    }
+
+    class B extends A
+    {
+        const X = "Potato";
+    }
+
+    (new B)->foo();
+    ```
+
+    What is the output of this code?
+
+options:
+    - |
+        "Potato,Tomato"
+        
+    - |
+        "Tomato,Potato"
+        
+    - |
+        "Potato"
+        
+    - |
+        "Tomato"
+        
+    - |
+        It produces no output.
+        
+    - |
+        There is an error in the code.
+        
+
+correct: 0

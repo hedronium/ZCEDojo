@@ -1,0 +1,30 @@
+---
+question: |
+
+    ```PHP
+    abstract class A
+    {
+        abstract public function foo();
+        
+        public function baz()
+        {
+            echo "Baz";
+        }
+        
+        public function foo()
+        {
+            echo "foo";
+        }
+    }
+    ```
+
+    What is wrong with this code?
+
+options:
+    - Can not declare abstract method and define a method with the same name.
+    - Abstract Classes mcan not have function bodies.
+    - Abstract classes can not have abstract methods within itself.
+    - A class cannot be abstract.
+    - There is nothing wrong.
+
+correct: 0

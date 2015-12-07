@@ -1,0 +1,26 @@
+---
+question: |
+    What is the error in this piece of code?
+
+    ```PHP
+    interface A
+    {
+        public function foo();
+    }
+
+    class B implements A
+    {
+        protected function foo()
+        {
+            echo "LOL";
+        }
+    }
+    ```
+
+options:
+    - There is no instance of class B.
+    - Method body for foo() in interface can not be empty.
+    - The method definition of foo() does to match the method signature in the interface.
+    - There is no Error.
+
+correct: 2

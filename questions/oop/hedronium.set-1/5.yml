@@ -1,0 +1,20 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        public static $foo = "Potato";
+    }
+
+    echo __________;
+    ```
+
+    Fill in the blank with what would be needed to output the value of $foo.
+
+options:
+    - A::foo
+    - A::$foo
+    - (new A)->foo
+    - A:foo
+
+correct: 1

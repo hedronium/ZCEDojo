@@ -1,0 +1,61 @@
+---
+question: |
+    ```PHP
+    trait A
+    {
+        protected function foo()
+        {
+            echo "Monkey";
+            return "Funkey";
+        }
+    }
+
+    trait B
+    {
+        use A;
+        
+        protected function bar()
+        {
+            echo "Clunky";
+            echo $this->foo();
+        }
+    }
+
+    class C
+    {
+        use B;
+        
+        public function __construct()
+        {
+            $this->bar();
+        }
+    }
+
+    new C;
+    ```
+
+    What would be the output of this code?
+
+options:
+    - |
+        "ClunkyMonkeyFunkey"
+
+    - |
+        "ClunkyFunkey"
+
+    - |
+        "MonkeyFunkey"
+
+    - |
+        "FunkeyMonkeyClunky"
+
+    - |
+        "FunkeyClunky"
+
+    - |
+        "FunkeyClunkyMonkey"
+
+    - |
+        No Output.
+
+correct: 0

@@ -1,0 +1,37 @@
+---
+question: |
+    ```PHP
+    class A {
+        public function __construct()
+        {
+            echo "FOO";
+            $this->__clone();
+        }
+        
+        public function __clone()
+        {
+            echo "BAR";
+        }
+    }
+
+    $a = new A;
+    $b = clone $a;
+    ```
+    What is the output?
+
+options:
+    - There will be an Error.
+
+    - |
+        "FOOBAR"
+
+    - |
+        "FOOBARBAR"
+
+    - |
+        "BARFOO"
+
+    - |
+        "FOO"
+
+correct: 0

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZCE Dojo</title>
+</head>
+<body>
+
+    <script type="text/template" id="home_template">
+        <header>
+            <h1><em>ZCE</em>Dojo</h1>
+        </header>
+        <section class="categories">
+            <p class="loading">Loading Categories...</p>
+            <p class="empty-notice">No Categories to show.</p>
+        </section>
+    </script>
+
+    <script type="text/template" id="category_template">
+        <header>
+            <h2>{{ category_name }}</h2>
+            <em>{{ category_set_count }}</em>
+        </header>
+        <section class="sets">
+            <p class="loading">Loading Sets...</p>
+            <p class="empty-notice">No Sets to show.</p>
+        </section>
+    </script>
+
+    <script type="text/template" id="set_card_template">
+        <header>
+            <h3>{{ set_name }}</h3>
+        </header>
+        <footer>
+            <em>by</em> <strong>{{ set_namespace }}</strong>
+        </footer>
+    </script>
+
+    <script type="text/template" id="option_template">
+        <div class="option" data-id="{{ id }}">
+            >> {{{ option }}}
+        </div>
+    </script>
+
+    <script type="text/template" id="question_template">
+        <header>
+            #<span class="index">{{ number }}</span>
+        </header>
+        <section class="problem">
+
+        </section>
+        <section class="options">
+
+        </section>
+        <hr>
+    </script>
+
+    <script type="text/template" id="set_template">
+        <header>
+            <h2>{{ set_name }}</h2>
+            <span class="count"></span>
+            <i>by <strong>{{ set_namespace }}</strong></i>
+            <br>
+            <span class="category"></span>
+        </header>
+        <section class="questions">
+
+        </section>
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"  type="text/javascript"></script>
+    <script data-main="scripts/main.js?x=xx" src="components/requirejs/require.js"></script>
+</body>
+</html>

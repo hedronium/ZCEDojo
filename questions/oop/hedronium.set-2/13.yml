@@ -1,0 +1,28 @@
+---
+question: |
+    ```PHP
+    class A 
+    {
+        public $foo = 'FOO';
+        private $country = 'Malaysia';
+        
+        public function __get($name)
+        {
+            return "Thailand";
+        }
+    }
+
+    $a = new A;
+    $country = $a->country;
+    $foo = $a->foo;
+    ```
+    What are the values contained within variables `$country` and `$foo`?
+
+options:
+    - "$country = Thailand, $foo = FOO"
+    - "$country = Thailand, $foo = Thailand"
+    - "$country = Malaysia, $foo = Malaysia"
+    - "$country = Malaysia, $foo = FOO"
+    - An error will be thrown as the `$coutry` property is private.
+
+correct: 0

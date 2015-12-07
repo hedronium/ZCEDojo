@@ -1,0 +1,33 @@
+---
+question: |
+    ```PHP
+    class A {
+        private $a_count = 0;
+        
+        public function __clone()
+        {
+            ++$this->a_count;
+        }
+    }
+
+    $a = new A;
+    $b = clone $a;
+
+    echo $a==$b ? 'TRUE' : 'FALSE';
+    ```
+    What is the output?
+
+options:
+    - |
+        "TRUE"
+
+    - |
+        "FALSE"
+
+    - |
+        There will be no output.
+
+    - |
+        There will be an undefined constant error, as `clone` is not defined.
+
+correct: 0

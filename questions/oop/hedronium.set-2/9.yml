@@ -1,0 +1,31 @@
+---
+question: |
+
+    ```PHP
+    class A
+    {
+        public function foo()
+        {
+            echo "foo";    
+        }
+        
+        private function foo()
+        {
+            echo "bar";
+        }
+    }
+
+    $a = new A;
+    $a->foo();
+    ```
+
+    What will happen upon running this code?
+
+options:
+    - There will be an error as two methods with the same name is defined.
+    - It will output "foobar"
+    - It will output "foo"
+    - It will output "bar"
+    - There will be no output.
+
+correct: 0

@@ -1,0 +1,27 @@
+{
+  "name": "ZendDojo",
+  "version": "0.0.0",
+  "authors": [
+    "Omran Jamal <o.jamal97@gmail.com>"
+  ],
+  "description": "",
+  "main": "scripts/main.js",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "backbone": "~1.2.3",
+    "jquery": "~2.1.4",
+    "handlebars": "~4.0.5",
+    "marked": "~0.3.5"
+  }
+}

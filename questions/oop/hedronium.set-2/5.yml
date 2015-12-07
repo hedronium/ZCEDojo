@@ -1,0 +1,40 @@
+---
+question: |
+
+    ```PHP
+    interface A
+    {
+        public function foo($values);
+    }
+
+    class B implements A
+    {
+        public function foo($values)
+        {
+            echo implode(',', $values);
+        }
+    }
+
+    class C
+    {
+        public function __construct(A $a)
+        {
+            $a->foo(['egg','butter','cheese']);
+        }
+    }
+
+    $b = new B;
+    new C($b);
+    ```
+
+    What is wrong with this code?
+
+options:
+    - There is nothing wrong.
+    - Class C does not implement A.
+    - You cannot TypeHint a Interface.
+    - $b is not an instance of A.
+    - You can not pass objects into the constructor.
+    - You can not type hint arguments on the constructor.
+
+correct: 0

@@ -1,0 +1,29 @@
+---
+question: |
+    What is the output of this code?
+
+    ```php
+    class A
+    {
+        static public function x()
+        {
+            echo "Hello";
+        }
+    }
+
+    $a = new A;
+    $a->x();
+    ```
+
+options:
+    - |
+        "hello"
+
+    - |
+        ""
+
+    - |
+        Error
+
+
+correct: 0

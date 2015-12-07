@@ -1,0 +1,28 @@
+---
+question: |
+
+    ```PHP
+    interface A
+    {
+        public function foo(array $values);
+    }
+
+    class B implements A
+    {
+        public function foo($values)
+        {
+            echo implode('-', $values);
+        }
+    }
+    ```
+
+    What is wrong with this code?
+
+options:
+    - The function declaration and signature in the interface don't match.
+    - Both the interface and class cannot have the `foo` method.
+    - The `foo` method's body is not defined in the interface.
+    - You cannot typehint arrays.
+    - There is nothing wrong.
+
+correct: 0

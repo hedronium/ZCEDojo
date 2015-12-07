@@ -1,0 +1,10 @@
+---
+question: |
+	Can PHP Classes implement multiple Interfaces?
+
+options:
+	- Yes
+	- No
+	- Yes but only if the interfaces have no abstract methods.
+
+correct: 0

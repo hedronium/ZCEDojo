@@ -1,0 +1,35 @@
+---
+question: |
+    ```PHP
+    class A {
+        public static function __callStatic($name, $args)
+        {
+            return "LICHI";    
+        }
+        
+        public function __call($name, $args)
+        {
+            return "POTATO";
+        }
+        
+        public function foo()
+        {
+            return "MANGO";
+        }
+    }
+
+    $a = new A;
+
+    $x = $a->foo();
+    $y = $a->bar();
+    $z = A::bar();
+    ```
+    What are the values contained within variables `$x`, `$y` & `$z`?
+
+options:
+    - $x = MANGO, $y = POTATO, $z = LICHI
+    - $x = MANGO, $y = LICHI, $z = LICHI
+    - $x = MANGO, $y = POTATO, $z = POTATO
+    - $x = POTATO, $y = MANGO, $z = LICHI
+
+correct: 0

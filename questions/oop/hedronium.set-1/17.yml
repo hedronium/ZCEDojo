@@ -1,0 +1,26 @@
+---
+question: |
+    ```PHP
+    class A {}
+    class B extends A {}
+    class C extends B,A
+    {
+        public function foo()
+        {
+            echo "IRONMAN";
+        }
+    }
+
+    (new C)->foo();
+    ```
+
+    What is wrong with this code?
+
+options:
+    - Cannot inherit from Multiple Classes
+    - Cannot inherit from A as B already inherits from A
+    - Classes can not be empty
+    - Empty Classes can not be Extended
+    - There is nothing wrong with it. It Runs fine.
+
+correct: 0

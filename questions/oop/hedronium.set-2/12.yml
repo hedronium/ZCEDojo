@@ -1,0 +1,30 @@
+---
+question: |
+    ```PHP
+    interface A {
+        public $foo;
+        public function bar();
+    }
+
+    class B implements A
+    {
+        private $foo = "FOOSKA!";
+        
+        public function bar()
+        {
+            echo $this->foo;
+        }
+    }
+
+    new B;
+    ```
+    What is wrong with this code? (if any)
+
+options:
+    - Interfaces cannot have properties.
+    - `$foo` in interface `A` is `public` but `$foo` in class `B` is `private`
+    - There is nothing wrong.
+    - Both the interface and class define the method `bar()`
+    - Interfaces are extended not implemented.
+
+correct: 0

@@ -1,0 +1,46 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        public function __construct()
+        {
+            echo "Bat";
+        }
+        
+        public function __destruct()
+        {
+            echo "Man";
+            $this->__construct();
+        }
+    }
+
+    new A;
+    ```
+
+    What would be the output of this code?
+
+options:
+    - |
+        "BatManBat"
+        
+    - |
+        "BatBatMan"
+        
+    - |
+        "ManManBat"
+        
+    - |
+        "ManBatMan"
+        
+    - |
+        "BatMan"
+        
+    - |
+        "ManBat"
+        
+    - |
+        It will cause an error.
+        
+
+correct: 0

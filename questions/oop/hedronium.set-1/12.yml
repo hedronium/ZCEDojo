@@ -1,0 +1,30 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        private function foo()
+        {
+            echo "Foo";
+        }
+
+        public function bar()
+        {
+            echo "Bar";
+            return $this;
+        }
+    }
+
+    $a = new A;
+    $a->bar()->foo();
+    ```
+
+    What would happen upon running this code?
+
+options:
+    - Output "Foo"
+    - Output "Bar"
+    - Output "BarFoo"
+    - It will throw an error.
+
+correct: 3

@@ -1,0 +1,35 @@
+---
+question: |
+    ```PHP
+    class A extends B
+    {
+        public function foo()
+        {
+            echo "Foo";
+            parent::foo();
+        }
+    }
+
+    class B
+    {
+        public function foo()
+        {
+            echo "Bar";
+        }
+    }
+
+    $a = new A;
+    $a->foo();
+    ```
+
+    What is wrong with this code? (Choose the most correct Answer)
+
+options:
+    - Nothing, it runs fine, it outputs "FooBar"
+    - Nothing, it runs fine, it outputs "BarFoo"
+    - Nothing, it runs fine, it outputs "Foo"
+    - Class A cannot extend class B as A is defined before B.
+    - Class A and B both cannot have the foo() method
+    - Can't call parent class statically in object context.
+
+correct: 0

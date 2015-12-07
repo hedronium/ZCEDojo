@@ -1,0 +1,30 @@
+---
+question: |
+    What is the output of this code?
+
+    ```PHP
+    class A
+    {
+        private $bar = "Snack Bar";
+
+        public static function foo()
+        {
+            echo $this->bar;
+        }
+    }
+
+    A::foo();
+    ```
+
+options:
+    - |
+        "Snack Bar"
+
+    - |
+        Error
+
+    - |
+        ""
+        
+
+correct: 1

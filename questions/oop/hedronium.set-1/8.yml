@@ -1,0 +1,39 @@
+---
+question: |
+    What would happen upon running this code?
+
+    ```PHP
+    trait A
+    {
+        protected $foo = "FOOSKA";
+    }
+
+    trait B
+    {
+        protected function bar()
+        {
+            return $this->foo;
+        }
+    }
+
+    class C {
+        use A;
+        use B;
+
+        public function baz()
+        {
+            echo $this->bar();
+        }
+    }
+
+    $c = new C;
+    $c->baz();
+    ```
+
+options:
+    - Output "HELLO"
+    - Output "FOOSKA"
+    - Output nothing.
+    - It will throw an error.
+
+correct: 1

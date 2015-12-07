@@ -1,0 +1,26 @@
+---
+question: |
+
+    ```PHP
+    class A
+    {
+        public function __construct()
+        {
+            return 42;
+            return "Potato";
+        }
+    }
+
+    $a = new A();
+    ```
+
+    What is the value contained within the variable `$a`?
+
+options:
+    - (int) 42
+    - (string) "Potato"
+    - An instance of the class `A`
+    - There is an erro in the code.
+    - The class `A`
+
+correct: 2

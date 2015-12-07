@@ -1,0 +1,59 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        public function __construct()
+        {
+            echo "A";
+        }
+        
+        public function __destruct()
+        {
+            echo "B";
+        }
+    }
+
+    class B extends A
+    {
+        public function __construct()
+        {
+            parent::__construct();
+            echo "C";
+        }
+        
+        public function __destruct()
+        {
+            echo "D";
+        }
+    }
+
+    new B;
+    ```
+
+    What would be the output of this code?
+
+options:
+    - |
+        "ACD"
+        
+    - |
+        "ABCD"
+        
+    - |
+        "ACBD"
+        
+    - |
+        "ADBC"
+        
+    - |
+        "ADC"
+        
+    - |
+        "ABC"
+        
+    - |
+        "BCD"
+        
+
+correct: 0

@@ -1,0 +1,25 @@
+---
+question: |
+    ```PHP
+    class A {
+        const FOO = 'bar';
+        
+        public function baz()
+        {
+            echo _____________;
+        }
+    }
+
+    (new A)->baz();
+    ```
+
+    Fill in the blank with what is required to output the value of the constant `FOO`. ("bar")
+
+options:
+    - `static::FOO`
+    - `parent::FOO` 
+    - `$this->FOO`
+    - `$FOO`
+    - `FOO`
+
+correct: 0

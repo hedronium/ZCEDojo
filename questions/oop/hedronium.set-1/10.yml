@@ -1,0 +1,29 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        const FOO = "Potato"; 
+        public static $FOO = "Mango";
+    }
+
+    echo A::FOO;
+    ```
+
+    What is the output?
+
+options:
+    - |
+        "Potato"
+
+    - |
+        "Mango"
+
+    - |
+        ""
+
+    - |
+        There is an Error.
+        
+
+correct: 0

@@ -1,0 +1,31 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        public static function foo()
+        {
+            return new static;
+        }
+    }
+
+    class B extends A
+    {
+    }
+
+    class C extends B
+    {
+    }
+
+    $x = B::foo();
+    ```
+
+    Which statement is correct?
+
+options:
+    - $x is an instance of class C.
+    - $x is an instance of class A.
+    - $x is an instance of class B.
+    - $x is null.
+
+correct: 2

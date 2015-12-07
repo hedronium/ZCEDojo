@@ -1,0 +1,46 @@
+---
+question: |
+    What is the output of this code?
+
+    ```PHP
+    class A
+    {
+        public $foo = "Potato";
+
+        public function __construct()
+        {
+            $this->foo = "Tomato";
+        }
+    }
+
+    class B extends A
+    {
+        public function __construct()
+        {
+            $this->foo = "Mango";
+            parent::__construct();
+        }
+    }
+
+    $b = new B;
+    echo $b->foo;
+    ```
+
+options:
+    - |
+        "Mango"
+
+    - |
+        "Potato"
+
+    - |
+        "Tomato"
+
+    - |
+        ""
+
+    - |
+        Error
+        
+
+correct: 2

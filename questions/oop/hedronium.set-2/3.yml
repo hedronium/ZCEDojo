@@ -1,0 +1,31 @@
+---
+question: |
+
+    ```PHP
+    abstract class A
+    {
+        public $foo = "Foo";
+
+        public function baz()
+        {
+            echo "Baz";
+        }
+    }
+
+    class B extends A
+    {
+        public $foo = "Bar";
+    }
+
+    new A;
+    ```
+
+    What is wrong with this code?
+
+options:
+    - Nothing
+    - Abstract classes cannot be instantiated.
+    - Abstract classes cannot be extended.
+    - Abstract classes cannot contain method definitions.
+
+correct: 1

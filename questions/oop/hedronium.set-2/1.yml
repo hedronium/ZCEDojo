@@ -1,0 +1,36 @@
+---
+question: |
+    Is there an error in this code? If yes, what is it?
+
+    ```PHP
+    class A
+    {
+        public function bar()
+        {
+            echo "Bar";    
+        }
+        
+        public function baz()
+        {
+            echo "Baz";    
+        }
+        
+        abstract public function foo();
+    }
+
+    class B extends A
+    {
+        public function baz()
+        {
+            echo "Pew";
+        }
+    }
+    ```
+
+options:
+    - The abstract method must be implemented.
+    - Both classes can not have the `baz` method.
+    - None of the classes have an constructor.
+    - Abstract methods can not be public.
+
+correct: 0

@@ -1,0 +1,25 @@
+---
+question: |
+    ```PHP
+    class A {}
+    $a = new A;
+    $b = clone $a;
+
+    echo $a==$b ? 'YEAH!' : 'NO';
+    ```
+    What is the output?
+
+options:
+    - |
+        "YEAH!"
+
+    - |
+        "NO"
+
+    - |
+        There will be no output.
+
+    - |
+        There will be an undefined constant error, as `clone` is not defined.
+
+correct: 0

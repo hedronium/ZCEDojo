@@ -1,0 +1,34 @@
+---
+question: |
+    What is the output of this code?
+
+    ```PHP
+    final class A
+    {
+        public $foo = "FOOSKA!";
+    }
+
+    class B extends A
+    {
+        public function bar()
+        {
+            echo $this->foo;
+        }
+    }
+
+    $b = new B;
+    $b->bar();
+    ```
+
+options:
+    - |
+        "FOOSKA!"
+
+    - |
+        ""
+
+    - |
+        Error
+        
+
+correct: 2

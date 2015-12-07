@@ -1,0 +1,18 @@
+[
+    {
+        "id": "basics",
+        "name": "Basics"
+    },
+    {
+        "id": "functions",
+        "name": "Functions"
+    },
+    {
+        "id": "web-features",
+        "name": "Web Features"
+    },
+    {
+        "id": "oop",
+        "name": "Object Oriented Programming"
+    }
+]

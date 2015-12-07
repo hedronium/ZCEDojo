@@ -1,0 +1,50 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        public function __construct()
+        {
+            echo "BAT";
+        }
+        
+        public function __destruct()
+        {
+            echo "MAN";
+        }
+        
+        public function foo()
+        {
+            echo "the";
+        }
+    }
+
+    (new A)->foo();
+    ```
+
+    What would be the output of this code?
+
+options:
+    - |
+        "BATtheMAN"
+        
+    - |
+        "BATMAN"
+        
+    - |
+        "BATMANthe"
+        
+    - |
+        "theBATMAN"
+        
+    - |
+        "theMANBAT"
+        
+    - |
+        "MANBAT"
+        
+    - |
+        "MANtheBAT"
+        
+
+correct: 0

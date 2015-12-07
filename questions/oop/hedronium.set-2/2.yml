@@ -1,0 +1,25 @@
+---
+question: |
+
+    ```PHP
+    class A
+    {
+        protected $foo = "FOO";
+    }
+
+    class B extends A
+    {
+        private $bar = "BAR";
+    }
+    ```
+
+    Will an instance of class `B` have access to the `$foo` property?
+    Choose the most accurate option.
+
+options:
+    - Yes
+    - Yes only internally by its methods.
+    - No.
+    - protected properties are not inherited.
+
+correct: 1

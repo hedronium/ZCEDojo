@@ -1,0 +1,32 @@
+---
+question: |
+    ```PHP
+    interface A
+    {
+        public function run();
+    }
+
+    class B implements A
+    {
+        public function run()
+        {
+            echo "Run! Forest Run!";
+        }
+    }
+
+    $b = new B;
+
+    $x = $b instanceof B;
+    $y = $b instanceof A;
+    ```
+
+    What is the value of $x & $y?
+
+options:
+    - $x = true,  $y = true
+    - $x = false, $y = false
+    - $x = true,  $y = false
+    - $x = false, $y = true
+    - the operator 'instanceof' does not exist.
+
+correct: 0

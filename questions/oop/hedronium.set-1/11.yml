@@ -1,0 +1,40 @@
+---
+question: |
+    ```PHP
+    class A
+    {
+        public function foo()
+        {
+            echo "Foo";
+        }
+
+        public function bar()
+        {
+            echo "Bar";
+            return $this;
+        }
+    }
+
+    $a = new A;
+    $a->bar()->foo();
+    ```
+
+    What is the output?
+
+options:
+    - |
+        "Foo"
+        
+    - |
+        "Bar"
+
+    - |
+        "BarFoo"
+
+    - |
+        "FooBar"
+
+    - |
+        ""
+
+correct: 2
