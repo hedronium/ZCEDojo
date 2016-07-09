@@ -1,0 +1,64 @@
+question_1:
+
+        question: |
+                What is the output of this code?
+
+                ```php
+                class A
+                {
+                    static public function x()
+                    {
+                        echo "Hello";
+                    }
+                }
+
+                $a = new A;
+                $a->x();
+            ```
+        options:
+            - |
+                "hello"
+
+            - |
+                ""
+
+            - |
+                Error
+
+
+        correct: 0
+
+question_2:
+
+        question: |
+            What is the output of this code?
+
+            ```PHP
+            final class A
+            {
+                public $foo = "FOOSKA!";
+            }
+
+            class B extends A
+            {
+                public function bar()
+                {
+                    echo $this->foo;
+                }
+            }
+
+            $b = new B;
+            $b->bar();
+            ```
+        options:
+            - |
+                "FOOSKA!"
+
+            - |
+                ""
+
+            - |
+                Error
+                
+
+        correct: 2
